@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="encriptador">
+    <main class="main">
+        <div class="div-imagen">
+            <img  src="./assets/Logo.png" alt="logo">
+        </div>
+        <section class="encriptador-izq">
+            <div class="encriptador-izq-texto">
+                <textarea class="encriptador-izq-input-texto" type="text" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+                <p class="encriptador-izq-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                    </svg> Solo letras minúscula y sin acentos
+                </p>
+            <div class="encriptador-izq-btns">
+                <button class="encriptador-izq-btn1" type="button">Encriptar</button>
+                <button class="encriptador-izq-btn2" type="button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptador-der">
+            <div class="encriptador-der contenedor1" id="contenedor1">
+                <img class="encriptador-der-imagen" src="./assets/Muñeco.png" alt="persona">
+                <div class="encriptador-der-textos">
+                    <h2 class="encriptador-der-titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="encriptador-der-texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div class="encriptador-der contenedor2" id="contenedor2">
+                <div class="encriptador-der-input">
+                    <textarea class="encriptador-der-input-texto" type="text" readonly></textarea>
+                </div>
+                <button class="encriptador-der-btn" type="button">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
